@@ -1,13 +1,11 @@
 # Guía de Laboratorio #2 - Módulo 5: Enlaces en Páginas Web
 
-Rosa Díaz.
-Guía 2 del módulo.
-
 Este documento resume la base teórica y los requisitos prácticos del Módulo 5 sobre el diseño de estructuras de páginas web, específicamente enfocado en la creación y gestión de enlaces.
 
 ## 📋 Información General
 
-- **Módulo:** 5 - Diseño de Estructura de Página Web.
+- **Estudiante:** Rosa Díaz.
+- **Módulo:** 5 - Diseño de Estructura de Página Web. Guia 2
 - **Práctica:** Enlaces en Páginas Web.
 - **Instructor:** Lic. Ramón Morillo Ullola.
 - **Resultado de Aprendizaje:** Crear enlaces en páginas web para insertar y vincular diferentes elementos, aplicando correctamente las etiquetas HTML y sus atributos.
