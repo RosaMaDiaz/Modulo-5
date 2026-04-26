@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad página 45</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center; color:rgb(53, 161, 10);">Formulario de Registro</h1>
+    </header>
+
+    <form>
+        <!-- Campo de nombre -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br><br>
+
+        <!-- Campo de correo -->
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico"><br><br>
+
+        <!-- Selección de curso -->
+        <label for="curso">Seleccione un curso:</label><br>
+        <select id="curso" name="curso">
+            <option value="html">HTML Básico</option>
+            <option value="css">CSS Intermedio</option>
+            <option value="javascript">JavaScript Avanzado</option>
+        </select><br><br>
+
+        <!-- Comentario -->
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escriba su comentario"></textarea><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
