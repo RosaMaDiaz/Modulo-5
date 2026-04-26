@@ -32,7 +32,55 @@
         </optgroup>
 
     </select>
-</form>
 
+    <br><br>
+
+    <h3>Ejemplo con Multiples Size:</h3>
+    <label for="lenguaje">Selecciona tus lenguajes favoritos:</label>
+    <select id="lenguaje" name="lenguaje[]" multiple size="4">
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Csharp">C#</option>
+        <option value="Java">Java</option>
+     </select>
+
+    <br><br>
+    <h3>Textos largos con textarea</h3>
+    <label for="comentarios">Escribe tus comentarios:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escribe aquí tus opinión:.."
+        required>
+    </textarea>
+
+    <br><br>
+
+
+    <h3>Agrega un medidor de valor usando la etiqueta meter</h3>
+        <label for="bateria">Nivel de bateria:</label>
+        <meter id="bateria" value="65" min="0" max="100" low="20" optimum="100">
+            65%
+        </meter>
+
+    <br><br>
+
+
+    <h3>Agrega un progresbar para mostrar el avance de una tare en curso</h3>
+    <label for="progreso">Progreso de la tarea:</label>
+    <progress id="progreso" value="70" max="100">70%</progress>
+
+    <br><br>
+
+    <details>
+        <summary>¿Qué es HTML?</summary>
+        <p>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de marcado estándar para crear páginas web. Este formulario es un ejemplo de cómo usar diferentes elementos de formulario en HTML, 
+            incluyendo campos de texto, selecciones, áreas de texto, medidores y barras de progreso.</p>
+    </details>
+
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+
+
+</form>
 </body>
 </html>
