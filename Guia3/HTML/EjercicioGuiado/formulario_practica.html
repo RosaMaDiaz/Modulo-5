@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <!--Nombre-->
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placehorlder="Ingrese su Nombre" required maxlength="30"><br><br>
+
+    <!--Correo-->
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+    <!--Contraseña-->
+    <label for="contrasena">Contraseña:</label><br>
+    <input type="password" id="clave" name="clave" required><br><br>
+
+    <!--Edad-->
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" min="10" max="100"><br><br>
+
+    <!--Fecha-->
+    <label for="fecha">Fecha de nacimiento:</label><br>
+    <input type="date" id="fecha" name="fecha"><br><br>
+
+    <!--Género-->
+    <label for="genero">Género:</label><br>
+    <input type="radio" id="genero" name="masculino">Masculino<br>
+    <input type="radio" id="genero" name="femenino">Femenino<br><br>
+
+    <!--Intereses-->
+    <label for="intereses">Intereses:</label><br>
+    <input type="checkbox" name="interes" value="Programacion">Programación<br>
+    <input type="checkbox" name="interes" value="diseño">Diseño<br><br>
+
+    <!--Campo solo lectura readonly-->
+    <label Label>País:</label><br>
+    <input type="text" name="República Dominicana" value="República Dominicana" readonly><br><br>
+
+    <!--Campo deshabilitado disabled-->
+    <label>Usuario asignado:</label><br>
+    <input type="text" value="usuario123" disabled><br><br> 
+
+    <!--Botón de envío-->
+    <input type="submit" value="Registrarse">
+
+    
+
+    
+
+
+</body>
+</html>
