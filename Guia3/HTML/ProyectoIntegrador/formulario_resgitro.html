@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro al Taller de Herramientas Digitales</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8; 
+            color: #2d3748;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 650px;
+            border-top: 6px solid #4a90e2; 
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a365d;
+            margin-bottom: 25px;
+            font-size: 1.6em;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #4a5568;
+            font-size: 0.95em;
+        }
+
+        input[type="text"], 
+        input[type="email"], 
+        input[type="tel"], 
+        input[type="date"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1.5px solid #cbd5e0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            background-color: #fcfcfc;
+            transition: all 0.3s;
+            color: #2d3748;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+            background-color: #fff;
+        }
+
+        .option-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            background-color: #f8fafc;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.85em;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 6px;
+            cursor: pointer;
+            accent-color: #4a90e2;
+        }
+
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+
+        .button-group {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            flex: 2;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357abd;
+        }
+
+        input[type="reset"] {
+            background-color: #edf2f7;
+            color: #4a5568;
+            border: 1px solid #cbd5e0;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            flex: 1;
+            transition: background-color 0.3s;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registro al Taller de Herramientas Digitales</h2>
+    
+    <form action="#" method="post">
+        
+        <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cedula">Cédula o ID:</label>
+            <input type="text" id="cedula" name="cedula" placeholder="000-0000000-0" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha_nac">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nac" name="fecha_nac" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel" placeholder="800-000-0000">
+        </div>
+
+        <div class="form-group">
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera" required>
+                <option value="" disabled selected>Seleccione su carrera</option>
+                <option value="informatica">Informática</option>
+                <option value="contabilidad">Contabilidad</option>
+                <option value="electronica">Electrónica</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Asignaturas de interés:</label>
+            <div class="option-group">
+                <label class="option-item"><input type="checkbox" name="asig" value="mat"> Matemática Discreta</label>
+                <label class="option-item"><input type="checkbox" name="asig" value="prog"> Programación Web</label>
+                <label class="option-item"><input type="checkbox" name="asig" value="red"> Redes</label>
+                <label class="option-item"><input type="checkbox" name="asig" value="bd"> Base de Datos</label>
+                <label class="option-item"><input type="checkbox" name="asig" value="log"> Lógica Computacional</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="evento">Evento:</label>
+            <select id="evento" name="evento" required>
+                <option value="" disabled selected>Seleccione el evento</option>
+                <option value="taller">Taller de Herramientas Digitales</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Modalidad:</label>
+            <div class="option-group">
+                <label class="option-item"><input type="radio" name="modalidad" value="p" required> Presencial</label>
+                <label class="option-item"><input type="radio" name="modalidad" value="v"> Virtual</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Horarios disponibles:</label>
+            <div class="option-group">
+                <label class="option-item"><input type="checkbox" name="horario" value="m"> Mañana</label>
+                <label class="option-item"><input type="checkbox" name="horario" value="t"> Tarde</label>
+                <label class="option-item"><input type="checkbox" name="horario" value="n"> Noche</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Escribe tus sugerencias o comentarios..."></textarea>
+        </div>
+
+        <div class="button-group">
+            <input type="submit" value="Enviar Registro">
+            <input type="reset" value="Limpiar Formulario">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
