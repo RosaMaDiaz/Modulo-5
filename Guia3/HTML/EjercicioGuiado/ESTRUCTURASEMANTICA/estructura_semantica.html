@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Semántica de una Página Web</title>
+    <style>body {
+        font-family: Arial, sans-serif
+        margin: 0; }
+        header,
+        footer,
+        nav,
+        main,
+        article,
+        aside
+        section {
+            padding: 15px; }
+        header {
+            background-color: #2b5797;
+            color: white; }
+        nav {
+            background-color: #e5e5e5;
+            padding: 10px; }
+        main {
+            display: flex;
+            margin: 10px; }
+        article {   
+            flex: 3;
+            background-color: #f9f9f9;
+            margin-right: 10px; }
+        aside {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 15px; }
+        footer {
+            background-color: #2b5797;
+            color: white;
+            text-align: center;
+            padding: 10px; }
+        mark {
+            background-color: yellow;     
+        }
+    
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <p>Ejemplo de estructura semántica en HTML5</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Artículos</a> |
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <article>
+            <header>
+                <h2>Título del Artículo</h2>
+                <p>Publicado el <time datetime="2026-04-19">19 de abril de 2026</time></p>
+            </header>
+
+            <section>
+                <p>El elemento <mark>HTML semántico</mark> ayuda a los buscadores a entender el propósito del contenido.</p>
+                <p>Este es un ejemplo de contenido dentro de un <mark>artículo independiente</mark>.</p>
+                <p>Utiliza etiquetas semánticas para mejorar la organización del código y la comprensión del contenido.</p>
+            </section>
+
+            <details>
+                <summary>Leer más...</summary>
+                <p>El uso de etiquetas semánticas ayuda a que los motores de búsqueda comprendan mejor la estructura de la página y mejora la accesibilidad para todos los usuarios.</p>
+            </details>
+        </article>
+        <aside>
+            <h3>Barra lateral</h3>
+            <p>Contenido complementario enlaces, anuncios o informacion adicional</p>>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Curso de Programación Web. Módulo HTML</p>
+        <p> Autor: Ramón Morillo Ulloa</p>
+    </footer>
+
+</body>
+</html>
